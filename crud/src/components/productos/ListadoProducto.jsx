@@ -44,7 +44,7 @@ const ListadoProducto = () => {
                             <td>{producto.valor}</td>
                             <td>{producto.cantidad}</td>
                             <td>
-                                <img src={`${producto.imagenProducto}`} alt="fptp del producto" />
+                                <img src={`${producto.imagenProducto}`} alt="foto del producto" />
                             </td>
                             <td>
                                 <button onClick={() => eliminarProducto(producto.id)} className="btn form-control bg-warning" >Eliminar</button>
