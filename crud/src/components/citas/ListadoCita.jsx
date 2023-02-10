@@ -32,8 +32,9 @@ const ListadoCita = () => {
                         <th>Lugar</th>
                         <th>Nombre de servicio</th>
                         <th>Descripción de servicio</th>
-                        <th>Imagén de cliente</th>
+                        <th>Imagen de cliente</th>
                         <th>Direccion de cliente</th>
+                        <td>Opciones</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,6 +43,7 @@ const ListadoCita = () => {
                             <td>{cita.fecha}</td>
                             <td>{cita.lugar}</td>
                             <td>{cita.nombreServicio}</td>
+                            <td>{cita.descripcionServicio}</td>
                             <td>
                                 <img src={`${cita.imgCliente}`} alt="fptp del producto" />
                             </td>

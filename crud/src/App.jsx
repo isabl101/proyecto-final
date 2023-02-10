@@ -4,6 +4,7 @@ import ListadoProducto from './components/productos/ListadoProducto'
 import EditarProducto from './components/productos/EditarProducto'
 import ListadoCita from './components/citas/ListadoCita'
 import CrearCitas from './components/citas/CrearCitas'
+import EditarCita from './components/citas/EditarCita'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/crearCita',
     element: <CrearCitas />,
+  },
+  {
+    path: '/editarCita/:id',
+    element: <EditarCita />,
   }
 ])
 

@@ -74,7 +74,7 @@ const EditarProducto = () => {
                 onChange={(e) => setFotoProducto(e.target.value)}
                 value={fotoProducto}
                 type="date"
-                placeholder="Fecha de Vencimiento"
+                placeholder="Foto del producto"
             />
 
             <Link to={"/listadoProducto"} className="btn btn-dark form-control mb-2">
