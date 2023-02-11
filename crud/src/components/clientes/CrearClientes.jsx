@@ -86,7 +86,7 @@ const CrearClientes = () => {
         className="inputs"
         onChange={(e) => setFoto(e.target.value)}
         value={foto}
-        type="text"
+        type="file"
         placeholder="Foto"
       />
 

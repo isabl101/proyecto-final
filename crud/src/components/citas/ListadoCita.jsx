@@ -27,6 +27,7 @@ const ListadoCita = () => {
     return (
         <section>
             <BarraNav />
+            <h5 className="titulos-crud">Citas programadas</h5>
             <section className="container mt-5">
             <table>
                 <thead>
@@ -37,7 +38,7 @@ const ListadoCita = () => {
                         <th>Descripción de servicio</th>
                         <th>Imagen de cliente</th>
                         <th>Direccion de cliente</th>
-                        <td>Opciones</td>
+                        <th>Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,7 +49,7 @@ const ListadoCita = () => {
                             <td>{cita.nombreServicio}</td>
                             <td>{cita.descripcionServicio}</td>
                             <td>
-                                <img src={`${cita.imgCliente}`} alt="fptp del producto" />
+                                <img src={`${cita.imgCliente}`} alt="foto del cliente" />
                             </td>
                             <td>{cita.direccionCliente}</td>
                             <td>

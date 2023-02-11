@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom'
 import BarraNav from "../BarraNav";
+import Footer from "../Footer";
 const urlProductos = "http://localhost:3100/productos";
 
 
@@ -27,6 +28,7 @@ const ListadoProducto = () => {
     return (
         <section>
             <BarraNav />
+            <h5 className="titulos-crud">Productos</h5>
             <section className="container mt-5">
             <table>
                 <thead>
@@ -47,7 +49,7 @@ const ListadoProducto = () => {
                             <td>{producto.valor}</td>
                             <td>{producto.cantidad}</td>
                             <td>
-                                <img src={`${producto.imagenProducto}`} alt="foto del producto" />
+                                <img src={`${producto.imagenProducto}`} alt="Foto del producto" />
                             </td>
                             <td>
                                 <button onClick={() => eliminarProducto(producto.id)} className="btn form-control bg-warning" >Eliminar</button>

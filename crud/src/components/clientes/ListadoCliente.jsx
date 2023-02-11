@@ -27,6 +27,7 @@ const ListadoCliente = () => {
     return (
         <section>
             <BarraNav />
+            <h5 className="titulos-crud">Clientes SyS</h5>
             <section className="container mt-5">
                 <table>
                     <thead>

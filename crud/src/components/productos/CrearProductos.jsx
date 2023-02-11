@@ -60,7 +60,7 @@ const CrearProductos = () => {
         onChange={(e) => setImagenProducto(e.target.value)}
         value={imagenProducto}
         type="file"
-        placeholder="Imagen del producto"
+        placeholder="Foto del producto"
       />
 
       <Link to={"/listadoProducto"} className="btn btn-dark form-control mb-2">
