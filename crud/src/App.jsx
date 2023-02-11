@@ -8,8 +8,13 @@ import EditarCita from './components/citas/EditarCita'
 import ListadoCliente from './components/clientes/ListadoCliente'
 import CrearClientes from './components/clientes/CrearClientes'
 import EditarCliente from './components/clientes/EditarCliente'
+import Home from './components/Home'
 
 const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
   {
     path: '/listadoProducto',
     element: <ListadoProducto />,

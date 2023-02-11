@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom'
+import BarraNav from "../BarraNav";
 const urlCitas = "http://localhost:3100/citas";
 
 
@@ -24,7 +25,9 @@ const ListadoCita = () => {
         mostrarCitas()
     }
     return (
-        <section className="container">
+        <section>
+            <BarraNav />
+            <section className="container mt-5">
             <table>
                 <thead>
                     <tr>
@@ -60,6 +63,7 @@ const ListadoCita = () => {
             <div className="d-grid gap-2 col-6 mx-auto">
                 <Link to={'/crearCita'} className="crear" >Ingresar Cita</Link>
             </div>
+        </section>
         </section>
     )
 }

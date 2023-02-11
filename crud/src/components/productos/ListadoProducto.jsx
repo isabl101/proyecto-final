@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom'
+import BarraNav from "../BarraNav";
 const urlProductos = "http://localhost:3100/productos";
 
 
@@ -24,7 +25,9 @@ const ListadoProducto = () => {
         mostrarProductos()
     }
     return (
-        <section className="container">
+        <section>
+            <BarraNav />
+            <section className="container mt-5">
             <table>
                 <thead>
                     <tr>
@@ -58,6 +61,7 @@ const ListadoProducto = () => {
             <div className="d-grid gap-2 col-6 mx-auto">
                 <Link to={'/crearProducto'} className="crear" >Ingresar Producto</Link>
             </div>
+        </section>
         </section>
     )
 }
